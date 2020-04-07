@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ext examples</title>
+
+<link rel="stylesheet" href="heatmap.css" />
+
+<script type="text/javascript" src="https://d3js.org/d3.v3.js"></script>
+
+<script type="text/javascript" src="heatmap.js"></script>
+</head>
+<body>
+
+<div id="tooltip" class="hidden">
+    <p><span id="value"></p>
+</div>
+
+Order: 
+<select id="order">
+    <option value="hclust">by cluster</option>
+    <option value="probecontrast">by probe name and contrast name</option>
+    <option value="probe">by probe name</option>
+    <option value="contrast">by contrast name</option>
+    <option value="custom">by log2 ratio</option>
+</select>
+
+<div id="chart"></div>
+
+</body>
+</html>
