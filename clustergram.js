@@ -1,4 +1,4 @@
-d3.tsv('data/heatmap.tsv', function(data) {
+d3.tsv('data/clustergram.tsv', function(data) {
     return { row: data.row_idx, col: data.col_idx, value: +data.log2ratio };
 }).then(function(data){
     var margin = { top: 70, right: 10, bottom: 50, left: 100 };
